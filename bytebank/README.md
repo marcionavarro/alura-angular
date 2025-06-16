@@ -22,8 +22,6 @@ O Bytebank é uma aplicação web que permite o cadastro e visualização de tra
 
 ## 🖥️ Screenshots
 
-Adicione aqui imagens do sistema em funcionamento:
-
 | Tela de Transações | Tela de Adicionar Transação |
 |---------------|-------------------|
 | ![Login](./src/assets/screenshots/image.png) | ![Transações](./src/assets/screenshots/image1.png) |
