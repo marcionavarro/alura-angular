@@ -1,27 +1,66 @@
-# Bytebank
+# 💸 Bytebank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+Bem-vindo ao **Bytebank**! Este é um sistema desenvolvido para gerenciar transações bancárias de forma simples e intuitiva, utilizando as melhores práticas do Angular.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🚀 Sobre o Projeto
 
-## Code scaffolding
+O Bytebank é uma aplicação web que permite o cadastro e visualização de transações financeiras. O objetivo é demonstrar conceitos fundamentais do Angular, como componentes, serviços, diretivas e integração com APIs.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- [Angular](https://angular.io/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [RxJS](https://rxjs.dev/) 
+- [Node.js](https://nodejs.org/) 
+- [json-server](https://github.com/typicode/json-server) (API fake para simular backend)
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🖥️ Screenshots
 
-## Running end-to-end tests
+Adicione aqui imagens do sistema em funcionamento:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+| Tela de Transações | Tela de Adicionar Transação |
+|---------------|-------------------|
+| ![Login](./src/assets/screenshots/image.png) | ![Transações](./src/assets/screenshots/image1.png) |
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## 📦 Como Instalar e Rodar o Projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/marcionavarro/alura-angular
+   cd bytebank
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Instale o json-server globalmente (caso não tenha):**
+   ```bash
+   npm install -g json-server
+   ```
+
+4. **Inicie o json-server com o arquivo de dados (exemplo: `db.json`):**
+   ```bash
+   json-server --watch db.json --port 3000
+   ```
+   O backend fake estará disponível em [http://localhost:3000](http://localhost:3000).
+
+5. **Execute o servidor de desenvolvimento Angular:**
+   ```bash
+   ng serve
+   ```
+   O sistema estará disponível em [http://localhost:4200](http://localhost:4200).
+
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
