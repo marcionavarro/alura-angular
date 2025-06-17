@@ -1,6 +1,6 @@
 <h4 class="text-lg-start">Login</h4>
 
-<form class="form w-50" (ngSubmit)="login()" #loginForm="ngForm">
+<form class="form w-75" (ngSubmit)="login()" #loginForm="ngForm">
   <div class="d-flex flex-column">
     <div class="input-group mb-3">
       <input
@@ -34,12 +34,18 @@
       ></app-mensagem>
     </div>
 
-    <button
-      type="submit"
-      class="btn btn-primary btn-block"
-      [disabled]="loginForm.invalid"
-    >
-      Login
-    </button>
+    <div class="d-flex justify-content-between align-items-center">
+      <button
+        type="submit"
+        class="btn btn-primary btn-block"
+        [disabled]="loginForm.invalid"
+      >
+        Login
+      </button>
+
+      <p class="mt-2">
+        Não é um usuário? <a [routerLink]="['novo-usuario']">Se cadastre!</a>
+      </p>
+    </div>
   </div>
 </form>
