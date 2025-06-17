@@ -36,6 +36,23 @@ CREATE TABLE IF NOT EXISTS photo (
 )
 `;
 
+const INSERT_DEFAULT_PHOTO_1 = `
+INSERT INTO photo (
+    photo_id, 
+    photo_post_date, 
+    photo_url, 
+    photo_description, 
+    photo_allow_comments, 
+    photo_likes, 
+    user_id
+) 
+SELECT 1, '2025-06-17', '3b2014e2-f9cc-467a-9b4d-aed22828bd66.jpg', 'Minha primeira foto', 1, 0, 1
+WHERE NOT EXISTS (
+    SELECT 1 FROM photo WHERE photo_id = 1
+);
+`;
+
+
 const COMMENT_SCHEMA =
 `
 CREATE TABLE IF NOT EXISTS comment (
@@ -66,6 +83,7 @@ db.serialize(() => {
     db.run(USER_SCHEMA);
     db.run(INSERT_DEFAULT_USER_1);
     db.run(PHOTO_SCHEMA);        
+    db.run(INSERT_DEFAULT_PHOTO_1);        
     db.run(COMMENT_SCHEMA);     
     db.run(LIKE_SCHEMA);        
 

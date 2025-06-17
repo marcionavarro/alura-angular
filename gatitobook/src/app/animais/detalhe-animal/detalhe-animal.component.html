@@ -1,0 +1,16 @@
+<div
+  class="d-flex justify-content-center pt-5 gap-5"
+  *ngIf="animal$ | async as animal"
+>
+  <app-animal [url]="animal.url" [descricao]="animal.description"></app-animal>
+  <div class="d-flex flex-column justify-content-between">
+    <p class="">
+      {{ animal.description }}
+    </p>
+    <div>
+      <i class="fa fa-heart-o fa-2x me-2" (click)="curtir()">{{ animal.likes }}</i>
+      <i class="fa fa-comment-o fa-2x me-2">{{ animal.comments }}</i>
+      <i class="fa fa-trash-o fa-2x" (click)="excluir()"></i>
+    </div>
+  </div>
+</div>
