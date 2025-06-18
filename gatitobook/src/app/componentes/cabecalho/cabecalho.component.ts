@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CabecalhoComponent implements OnInit {
   user$ = this.usuarioService.retornaUsuario();
 
-  constructor(private usuarioService: UsuarioService, private router: Router) {}
+  constructor(private usuarioService: UsuarioService, public router: Router) {}
 
   logout() {
     this.usuarioService.logout();
