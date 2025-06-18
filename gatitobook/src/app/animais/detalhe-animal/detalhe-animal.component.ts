@@ -21,7 +21,6 @@ export class DetalheAnimalComponent implements OnInit {
 
   ngOnInit(): void {
     this.animalId = this.activatedRoute.snapshot.params.animalId;
-    console.log(this.animalId);
     this.animal$ = this.animaisService.buscaPorID(this.animalId);
   }
 

@@ -1,16 +1,42 @@
-<div
-  class="d-flex justify-content-center pt-5 gap-5"
-  *ngIf="animal$ | async as animal"
->
-  <app-animal [url]="animal.url" [descricao]="animal.description"></app-animal>
-  <div class="d-flex flex-column justify-content-between">
-    <p class="">
-      {{ animal.description }}
-    </p>
-    <div>
-      <i class="fa fa-heart-o fa-2x me-2" (click)="curtir()">{{ animal.likes }}</i>
-      <i class="fa fa-comment-o fa-2x me-2">{{ animal.comments }}</i>
-      <i class="fa fa-trash-o fa-2x" (click)="excluir()"></i>
+<div class="container mt-4" *ngIf="animal$ | async as animal">
+  <div class="row">
+    <div class="col-md-6 col-lg-4 d-flex flex-column align-items-center mb-4">
+      <app-animal
+        [url]="animal.url"
+        [descricao]="animal.description"
+      ></app-animal>
+    </div>
+    <div class="col-md-6 col-lg=8 d-flex flex-column justify-content-between mb-4">
+      <div>
+        <p>{{ animal.description }}</p>
+      </div>
+      <div class="mt-auto d-flex align-items-center gap-3">
+        <i class="fa fa-heart-o fa-1x" (click)="curtir()">
+          {{ animal.likes }}
+        </i>
+        <i class="fa fa-comment-o fa-1x">
+          {{ animal.comments }}
+        </i>
+        <i
+          class="fa fa-trash-o fa-1x text-danger"
+          style="cursor: pointer"
+          (click)="excluir()"
+        ></i>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <app-comentarios
+        [id]="animalId"
+        *ngIf="animal.allowComments; else warning"
+      ></app-comentarios>
+
+      <ng-template #warning>
+        <div class="alert alert-warning mt-4">
+          Usuário não pode comentar o animal
+        </div>
+      </ng-template>
     </div>
   </div>
 </div>

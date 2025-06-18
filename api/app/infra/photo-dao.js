@@ -3,7 +3,7 @@ const photoConverter = row => ({
     postDate: new Date(row.photo_post_date),
     url: row.photo_url,
     description: row.photo_description,
-    allowComments: row.photo_allow_comments == 'true' ? true : false,
+    allowComments: row.photo_allow_comments == 'true' || row.photo_allow_comments == 1 ? true : false,
     likes: row.likes,
     comments: row.comments,
     userId: row.user_id,
