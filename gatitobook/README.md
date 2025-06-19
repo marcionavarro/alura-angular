@@ -1,27 +1,86 @@
-# Gatitobook
+# 🐾 Gatitobook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0.
+Bem-vindo ao **Gatitobook**! Um projeto desenvolvido com Angular para compartilhar fotos de pets, permitindo cadastro de usuários, upload de imagens e comentários.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 📚 Sobre o Projeto
 
-## Code scaffolding
+O **Gatitobook** é uma rede social para amantes de animais, onde usuários podem criar contas, fazer login, postar fotos dos seus pets e interagir com outros usuários através de comentários. O projeto utiliza Angular no frontend e Node.js no backend, com autenticação JWT e upload de imagens.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🚀 Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- [Angular](https://angular.io/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [RxJS](https://rxjs.dev/)  
+- [Node.js](https://nodejs.org/) (versão 14.x recomendada)  
+- [Express](https://expressjs.com/)  
+- [Multer](https://github.com/expressjs/multer) (upload de imagens)  
+- [Jimp](https://github.com/jimp-dev/jimp) (processamento de imagens)  
+- [JWT](https://jwt.io/) (autenticação)  
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🖼️ Screenshots
 
-## Running end-to-end tests
+| Tela de Login | Cadastro de Novo Usuário | Tela de animais |
+|---------------|-----------------|-------------------------|
+| ![Login](./src/assets/screenshots/image.png) | ![Feed](./src/assets/screenshots/image-1.png) | ![Cadastro](./src/assets/screenshots/image-2.png) |
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+| Cadastro de Animal | Cadastro de Animal com preview
+|---------------|-----------------
+| ![Cadastro](./src/assets/screenshots/image-3.png)  | ![Feed](./src/assets/screenshots/image-4.png) 
 
-## Further help
+---
+## ⚙️ Pré-requisitos
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Node.js** versão **14.x**  
+  Verifique sua versão com:
+  ```sh
+  node -v
+  ```
+  Caso necessário, instale a versão 14 do Node.js pelo [site oficial](https://nodejs.org/en/download/releases/).
+
+- **npm** (geralmente já incluso com o Node.js)
+
+---
+
+## 📦 Como Instalar e Rodar o Projeto
+
+1. **Clone o repositório:**
+   ```sh
+   git clone https://github.com/marcionavarro/alura-angular
+   cd gatitobook
+   ```
+
+2. **Instale as dependências do frontend:**
+   ```sh
+   npm install
+   ```
+
+3. **Instale as dependências do backend:**
+   ```sh
+   cd api
+   npm install
+   ```
+
+4. **Inicie o backend:**
+   ```sh
+   cd api
+   node server.js
+   # O backend estará disponível em http://localhost:3000
+   ```
+
+5. **Inicie o frontend Angular:**
+   ```sh
+   ng serve
+   # O sistema estará disponível em http://localhost:4200
+   ```
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
