@@ -1,20 +1,46 @@
-import { Injectable, TemplateRef } from '@angular/core';
+import {
+  ComponentFactory,
+  ComponentFactoryResolver,
+  ComponentRef,
+  Injectable,
+  Injector,
+} from '@angular/core';
+import { ModalConfig } from '../interfaces/modal-config';
+import { ModalComponent } from '../modal.component';
+import { BodyInjectorService } from 'src/app/shared/services/body-injector';
 
 @Injectable()
 export class ModalService {
+  private componentFactory: ComponentFactory<ModalComponent>;
+
+  constructor(
+    componentFactoryResolver: ComponentFactoryResolver,
+    private injector: Injector,
+    private bodyInjector: BodyInjectorService
+  ) {
+    this.componentFactory =
+      componentFactoryResolver.resolveComponentFactory(ModalComponent);
+  }
+
   public open(config: ModalConfig): ModalRef {
+    const componentRef = this.createComponentRef();
+    componentRef.instance.config = config;
+    console.log('🚀 ~ ModalService ~ open ~ componentRef:', componentRef);
     console.log('open called');
-    return new ModalRef();
+    this.bodyInjector.stackBeforeAppRoot(componentRef);
+    return new ModalRef(componentRef);
+  }
+
+  private createComponentRef(): ComponentRef<ModalComponent> {
+    return this.componentFactory.create(this.injector);
   }
 }
 
-export interface ModalConfig {
-  templateref: TemplateRef<any>;
-  title: string;
-}
-
 export class ModalRef {
+  constructor(private componentRef: ComponentRef<ModalComponent>) {}
+
   public close() {
     console.log('close called');
+    this.componentRef.destroy();
   }
 }
