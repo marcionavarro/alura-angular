@@ -1,27 +1,55 @@
-# A11yP2
+# 🚀 a11y-p2: Aplicação Angular com Acessibilidade
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+Este projeto demonstra a implementação de um modal acessível em Angular, com foco em boas práticas de acessibilidade (a11y), uso de animações, formulários reativos e gerenciamento de foco.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🛠️ Tecnologias Utilizadas
 
-## Code scaffolding
+- **Angular 10**
+- **TypeScript**
+- **SCSS**
+- **Reactive Forms**
+- **Animações Angular**
+- **Acessibilidade (a11y)**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📦 Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. **Clone o repositório:**
+   ```sh
+   git clone https://github.com/marcionavarro/alura-angular
+   cd a11y-p2
+   ```
 
-## Running unit tests
+2. **Instale as dependências:**
+   ```sh
+   npm install
+   ```
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ▶️ Como Rodar a Aplicação
 
-## Running end-to-end tests
+Execute o comando abaixo para iniciar o servidor de desenvolvimento:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```sh
+npm start
+```
 
-## Further help
+Acesse no navegador: [http://localhost:4200](http://localhost:4200)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+---
+
+## 🖼️ Screenshots
+
+| Modal Aberto |
+|--------------|
+| ![Modal Aberto](image.png) 
+---
+
+## ♿ Sobre Acessibilidade
+
+- Modal com foco gerenciado e fechamento por teclado
+- Labels e mensagens de erro acessíveis por leitores de tela
+- Uso de `aria-*` para melhor experiência assistiva
