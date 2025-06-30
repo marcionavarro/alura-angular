@@ -54,11 +54,7 @@ NgTest1 é uma aplicação Angular criada para demonstrar práticas modernas de 
   npm run build
   ```
 
----
-
 ## 🖼️ Screenshots
-
-Adicione aqui imagens da aplicação em funcionamento:
 
 | Página Inicial 
 |:--------------:
@@ -70,5 +66,3 @@ Adicione aqui imagens da aplicação em funcionamento:
 
 - O projeto já vem configurado com testes unitários e E2E.
 - Para mais informações, consulte a [documentação oficial do Angular CLI](https://angular.io/cli).
-
-```
