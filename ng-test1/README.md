@@ -1,27 +1,74 @@
-# NgTest1
+# 🚀 NgTest1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+NgTest1 é uma aplicação Angular criada para demonstrar práticas modernas de desenvolvimento front-end, incluindo testes unitários, componentização e uso de bibliotecas populares como FontAwesome. O projeto utiliza Angular CLI para scaffolding, Karma/Jasmine para testes e segue boas práticas de organização de código.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🛠️ Tecnologias Utilizadas
 
-## Code scaffolding
+- **Angular 11**  
+- **TypeScript**
+- **SCSS**
+- **FontAwesome**
+- **Jasmine & Karma** (testes unitários)
+- **Protractor** (testes E2E)
+- **uuid** (geração de IDs únicos)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📦 Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. **Clone o repositório**
+   ```sh
+   git clone https://github.com/marcionavarro/alura-angular.git
+   cd ng-test1
+   ```
 
-## Running unit tests
+2. **Instale as dependências**
+   ```sh
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## ▶️ Como rodar a aplicação
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- **Servidor de desenvolvimento**
+  ```sh
+  npm start
+  ```
+  Acesse [http://localhost:4200](http://localhost:4200) no navegador.
 
-## Further help
+- **Rodar testes unitários**
+  ```sh
+  npm test
+  ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Rodar testes E2E**
+  ```sh
+  npm run e2e
+  ```
+
+- **Build de produção**
+  ```sh
+  npm run build
+  ```
+
+---
+
+## 🖼️ Screenshots
+
+Adicione aqui imagens da aplicação em funcionamento:
+
+| Página Inicial 
+|:--------------:
+| ![alt text](image.png)
+
+---
+
+## 💡 Observações
+
+- O projeto já vem configurado com testes unitários e E2E.
+- Para mais informações, consulte a [documentação oficial do Angular CLI](https://angular.io/cli).
+
+```
