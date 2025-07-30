@@ -24,7 +24,7 @@ export class HomePage {
         return this.elementAllByCss('.photo').first().click();
     }
 
-    elementAllByCss(css: string) {
+    private elementAllByCss(css: string) {
         return element.all(by.css(css));
     }
 }
