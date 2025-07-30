@@ -8,7 +8,7 @@ export class HomePage {
         return browser.get(`${browser.baseUrl}/#/user/flavio`);
     }
 
-    async getWindowTitle() {
+    async getTitle() {
         return browser.getTitle();
     }
 

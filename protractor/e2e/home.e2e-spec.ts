@@ -20,7 +20,7 @@ describe('Home Page', () => {
     })
 
     it('Should navigate to user profile', async () => {
-        const title = await homePage.getWindowTitle();
+        const title = await homePage.getTitle();
         expect(title).toBe(HomePage.PAGE_TITLE);
     });
 
