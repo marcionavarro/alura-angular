@@ -11,8 +11,8 @@ exports.config = {
   allScriptsTimeout: 11000,
   specs: [
     // './src/**/*.e2e-spec.ts'
-    "*.e2e-spec.ts",
-    // './e2e/**/*.e2e-spec.ts' // Se  existir subpastas,
+    // "*.e2e-spec.ts", // Se não existir subpastas
+    "**/*.e2e-spec.ts", // Se  existir subpastas,
   ],
   capabilities: {
     browserName: "chrome",
@@ -42,6 +42,10 @@ exports.config = {
       })
     );
 
+    // @ts-ignore
+    by.addLocator(`formControlName`, (control) => {
+      return document.querySelector(`input[formControlName="${control}"]`);
+    });
     // @ts-ignore
     browser.driver.get("http://localhost:4200/#/home");
     // @ts-ignore
