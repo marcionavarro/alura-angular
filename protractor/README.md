@@ -1,27 +1,57 @@
-# ProtractorTest
+# 🚀 ProtractorTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+Bem-vindo ao **ProtractorTest**!  
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão **11.0.7** e demonstra práticas modernas de desenvolvimento front-end, incluindo testes unitários e E2E.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🛠️ Tecnologias Utilizadas
 
-## Code scaffolding
+- **Angular 11**
+- **TypeScript**
+- **Karma/Jasmine** (testes unitários)
+- **Protractor** (testes E2E)
+- **Node.js** (versão recomendada: **14.x**)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📦 Como Instalar e Rodar a Aplicação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+1. **Clone o repositório:**
+   ```sh
+   git clone https://github.com/marcionavarro/alura-angular.git
+   cd protractor
+   ```
 
-## Running unit tests
+2. **Instale as dependências:**
+   ```sh
+   npm install
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Verifique a versão do Node.js (recomendado >= 14.x):**
+   ```sh
+   node -v
+   ```
+   Caso necessário, instale pelo [site oficial](https://nodejs.org/en/download/releases/).
 
-## Running end-to-end tests
+4. **Execute o servidor de desenvolvimento:**
+   ```sh
+   ng serve || npm run all || npm run server
+   ```
+   Acesse [http://localhost:4200](http://localhost:4200) no navegador.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+---
 
-## Further help
+## 🧪 Testes
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Testes unitários:**  
+  ```sh
+  ng test
+  ```
+  Executa os testes via [Karma](https://karma-runner.github.io).
+
+- **Testes end-to-end:**  
+  ```sh
+  ng e2e || npm run e2e
+  ```
+  Executa os testes E2E via [Protractor](http://www.protractortest.org/).
